@@ -8,6 +8,7 @@ class MovieDetail extends StatelessWidget{
         title: const Text("Hello"),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly.start,
         children: [
           Container(
             decoration: BoxDecoration(
