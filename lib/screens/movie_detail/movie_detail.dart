@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text_section.dart';
 
 class MovieDetail extends StatelessWidget{
   @override
@@ -8,26 +9,12 @@ class MovieDetail extends StatelessWidget{
         title: const Text("Hello"),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
-            decoration: BoxDecoration(
-             color: Colors.red,
-            ),
-            child: Text('Hello'),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.green,
-            ),
-            child: Text('How'),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Text('Are You?'),
-          ),
+          TextSection(Colors.red),
+          TextSection(Colors.green),
+          TextSection(Colors.blue)
         ],
       )
     );
