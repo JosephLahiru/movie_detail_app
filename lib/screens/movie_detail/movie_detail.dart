@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'image_banner.dart';
 import 'text_section.dart';
 
 class MovieDetail extends StatelessWidget{
@@ -12,6 +13,7 @@ class MovieDetail extends StatelessWidget{
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          ImageBanner("assets/images/chappie1.jpg"),
           TextSection(Colors.red),
           TextSection(Colors.green),
           TextSection(Colors.blue)
